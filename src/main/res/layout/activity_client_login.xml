@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sign"
+    tools:context=".ClientSideSignUp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff9a1e"
+            android:elevation="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Sign In" />
+
+
+
+        <ImageView
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/foodicon"
+            android:layout_below="@id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40sp"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/Lemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email..."
+            android:inputType="textEmailAddress" />
+
+        <EditText
+
+
+            android:id="@+id/Lpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="password..."
+            android:elevation="10dp"
+            android:layout_marginTop="25sp"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Sign In"
+            android:background="#ff9a1e"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_marginLeft="120dp"
+
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

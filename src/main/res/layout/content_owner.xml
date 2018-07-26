@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodsads"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Owner"
+    tools:showIn="@layout/activity_owner">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Welcome To Admin"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+
+        android:textSize="35sp" />
+
+
+        <Button
+            android:id="@+id/addFoodItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:background="#0a2c63"
+            android:text="add Food Items"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70sp"
+            android:textAllCaps="false"
+
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/reveiveOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginTop="60sp"
+           android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10sp"
+            android:background="#0a2c63"
+
+            android:text="View Received Order"
+            android:textAllCaps="false"
+
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>

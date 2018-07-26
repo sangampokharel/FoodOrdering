@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".SingleFoodActivity">
+
+    <ImageView
+        android:id="@+id/singleFoodImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10sp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/defaultimage"
+        android:elevation="10dp"
+        android:scaleType="centerCrop" />
+
+
+    <TextView
+        android:id="@+id/singleFoodName"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:ellipsize="end"
+        android:layout_below="@+id/singleFoodImage"
+        android:maxLines="1"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Pizza"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/singleFoodDesc"
+        style="@style/Base.TextAppearance.AppCompat.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:ellipsize="end"
+        android:layout_below="@+id/singleFoodName"
+        android:maxLines="2"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20sp"
+        android:text="This food is best food i have seen"
+
+
+        />
+
+    <TextView
+        android:id="@+id/singleFoodPrice"
+        style="@style/Base.TextAppearance.AppCompat.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:ellipsize="end"
+        android:layout_below="@+id/singleFoodDesc"
+        android:maxLines="1"
+        android:text="$12"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:textColor="#299100"
+
+        />
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+
+        android:background="#05034c"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:layout_marginBottom="50dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Order Item" />
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFoodActivity"
+    android:background="#3869b7"
+    android:orientation="vertical"
+    android:layout_margin="10sp"
+
+    >
+
+
+    <ImageButton
+        android:id="@+id/foodImageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:onClick="ImageBtnClicked"
+        android:background="@drawable/defaultimage"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+ />
+
+    <EditText
+        android:id="@+id/foodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Food Name..."
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_marginTop="20sp"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/fooddesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_marginTop="20dp"
+        android:hint="Food Description..."
+        android:inputType="textPersonName" />
+
+
+
+    <EditText
+        android:id="@+id/foodPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Food Price..."
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_marginTop="20sp"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/addToMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add To Menu"
+        android:onClick="addMenuCicked"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:elevation="10dp"
+        android:background="#071428"
+        android:textColor="#fff"
+        />
+
+
+</LinearLayout>
